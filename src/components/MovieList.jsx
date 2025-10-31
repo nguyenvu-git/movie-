@@ -78,8 +78,7 @@ export default function MovieList({ title, data }) {
           removeArrowOnDeviceType={["tablet", "mobile"]}
           infinite={false}
         >
-          {data&&data.length >0&&data.length > 0 &&
-            data.map((item) => (
+          {data&&data.length > 0 &&data.map((item) => (
               <div
                 key={item.id}
                 onClick={()=>handleTrailer(item.id)}
